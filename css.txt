@@ -1,0 +1,5 @@
+There are 3 types of css
+1)internal css
+2)external css
+3)inline css
+---------------------------------------------------------------------------------
