@@ -25,11 +25,24 @@ else if(c=="")
 alert("email is empty");
 f1.t3.focus();
 }
+
 else if(d=="")
 {
 alert("phone no is empty");
 f1.t4.focus();
 }
+else if(d.length!=10)
+{
+alert("phone no should be 10 digits");
+f1.t4.focus();
+}
+else if(isNaN(d))
+{
+alert("phone no should be number");
+f1.t4.focus();
+}
+
+
 else if(e=="")
 {
 alert("password is empty");
@@ -49,7 +62,7 @@ alert("Data submitted successfully");
 <tr><td>Enter your name<td><input type=text name=t1 size=20></tr>
 <tr><td>Enter your address<td><input type=text name=t2 size=20></tr>
 <tr><td>Enter your email<td><input type=email name=t3 size=20></tr>
-<tr><td>Enter your phoneno<td><input type=number name=t4 size=20></tr>
+<tr><td>Enter your phoneno<td><input type=text name=t4 size=20></tr>
 <tr><td>Enter your password<td><input type=password name=t5 size=20></tr>
 <tr><td><td><input type=button value=submit onclick=fun()></tr>
 </table>
