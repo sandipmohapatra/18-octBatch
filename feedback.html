@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+function fun()
+{
+var a=f1.t1.value;
+var b=f1.t2.value;
+if(a=="")
+{
+alert("name is empty");
+f1.t1.focus();
+}
+else if(b=="")
+{
+alert("password is empty");
+f1.t2.focus();
+}
+else
+{
+f1.submit();
+alert("data submitted successfully"); 
+}
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Tabs</h3>
+  <ul class="nav nav-tabs">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li class="active"><a href="feedback.html">FeedBack</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <br>
+  <p><strong>Note:</strong> Feed Back Page </p>
+<h2>Form control: input</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form role="form" action=second name=f1>
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" name=t1>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" name=t2>
+    </div> 
+  <div class="form-group">
+       <button type="button" class="btn btn-danger" onclick=fun()>Submit</button>
+    </div> 
+ </form>
+</div>
+
+</body></html>
