@@ -1,0 +1,57 @@
+<!-- javascript used for validation -->
+<html>
+<script>
+function fun()
+{
+var a=f1.t1.value;
+var b=f1.t2.value;
+var c=f1.t3.value;
+var d=f1.t4.value;
+var e=f1.t5.value;
+if(a=="")
+{
+alert("name is empty");
+f1.t1.focus();
+}
+
+else if(b=="")
+{
+alert("address is empty");
+f1.t2.focus();
+}
+
+else if(c=="")
+{
+alert("email is empty");
+f1.t3.focus();
+}
+else if(d=="")
+{
+alert("phone no is empty");
+f1.t4.focus();
+}
+else if(e=="")
+{
+alert("password is empty");
+f1.t5.focus();
+}
+else
+{
+f1.submit();
+alert("Data submitted successfully");
+}
+}
+</script>
+<body>
+<form action=second name=f1>
+<h1><center>Mphasis Student Registration Page</center></h1><hr color=red>
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter your address<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter your email<td><input type=email name=t3 size=20></tr>
+<tr><td>Enter your phoneno<td><input type=number name=t4 size=20></tr>
+<tr><td>Enter your password<td><input type=password name=t5 size=20></tr>
+<tr><td><td><input type=button value=submit onclick=fun()></tr>
+</table>
+</body>
+</html>
