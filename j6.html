@@ -1,0 +1,30 @@
+<html>
+<script>
+var rollno=prompt("Enter your rollno");
+var name=prompt("Enter your name");
+var address=prompt("Enter your address");
+var phy=prompt("Enter your physics marks");
+var chem=prompt("Enter your chemistry marks");
+var bio=prompt("Enter your Biology marks");
+var tot=parseInt(phy)+parseInt(chem)+parseInt(bio);
+var avg=tot/3;
+document.write("Rollno is "+rollno);
+document.write("<br>");
+document.write("Name is "+name);
+document.write("<br>");
+document.write("Address is "+address);
+document.write("<br>");
+document.write("Total is "+tot);
+document.write("<br>");
+document.write("Average is "+avg);
+document.write("<br>");
+if(avg >=75)
+document.write("First Division");
+else if(avg >=60)
+document.write("Second Division");
+else if(avg >=50)
+document.write("Third Division");
+else
+document.write("Fail");
+</script>
+</html>
