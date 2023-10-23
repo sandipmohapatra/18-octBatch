@@ -33,11 +33,29 @@ var b=prompt("Enter a no");
 var c=parseInt(a)/parseInt(b);
 document.write("the div is "+c);
 }
+
+function sqrno()
+{
+var a=prompt("Enter a no");
+var b=a*a;
+document.write("the square of the no  is "+b);
+}
+
+function cubno()
+{
+var a=prompt("Enter a no");
+var b=a*a*a;
+document.write("the cube of the no is "+b);
+}
+
+
 </script>
 <body>
 <input type="button" value="add 2 nos" onclick="addno()"/>
 <input type="button" value="sub 2 nos" onclick="subno()"/>
 <input type="button" value="mul 2 nos" onclick="mulno()"/>
 <input type="button" value="div 2 nos" onclick="divno()"/>
+<input type="button" value="square 2 nos" onclick="sqrno()"/>
+<input type="button" value="cube 2 nos" onclick="cubno()"/>
 </body>
 </html>
