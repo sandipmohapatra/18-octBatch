@@ -1,29 +1,34 @@
 <!-- javascript Object -->
 <html>
 <script>
+
 function emp(id,name,address)
 {
 this.id=id;  <!--this refer to the local variables which get assigned with the parameters we pass both should be same name-->
 this.name=name;
 this.address=address;
 }
+
+<!-- ------------------------------------------------------------------------------------------ -->
 id=prompt("Enter your ID");
 name=prompt("Enter your name");
 add=prompt("Enter your address");
 
 x=new emp(id,name,add); <!-- constructor -->
-
+<!-- ---------------------------------------------------------------------------------------- -->
 id1=prompt("Enter your ID");
 name1=prompt("Enter your name");
 add1=prompt("Enter your address");
 
 y=new emp(id1,name1,add1); <!-- constructor -->
-
+<!-- -------------------------------------------------------------------------------------------- -->
 id2=prompt("Enter your ID");
 name2=prompt("Enter your name");
 add2=prompt("Enter your address");
 
 z=new emp(id2,name2,add2); <!-- constructor -->
+
+<!-- --------------------------------------------------------------------------------------------- -->
 
 document.write(x.id+"   "+x.name+"  "+x.address);
 document.write("<br>");
