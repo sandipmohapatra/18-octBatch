@@ -1,0 +1,16 @@
+<!-- It is used to print data on the browser -->
+<html>
+<script>
+function fun()
+{
+var fruits=["banana","oranges","mango","grapes"];
+var x=document.getElementById("ex1");
+x.innerHTML=fruits; <!-- x contains the id and .innerHTML is used to print the fruits -->
+}
+</script>
+
+<body>
+<button onclick=fun()>Click Here</button>
+Fruits are :<p id="ex1">Fruits</p>
+</body>
+</html>

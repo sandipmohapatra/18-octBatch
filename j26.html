@@ -1,0 +1,18 @@
+<html>
+<script>
+  function addno() {
+      var num1 = parseInt(document.getElementById('a').value);
+      var num2 = parseInt(document.getElementById('b').value);
+      var sum = num1 + num2;
+      document.getElementById('result').innerHTML =sum;
+    }
+</script>
+<body>
+<table border=1>
+  <tr><td>Enter a number<input type="number" id="a"></tr>
+  <tr><td>Enter a number<input type="number" id="b"></tr>
+  <tr><td><button onclick="addno()">Add</button></tr>
+  <tr><td>Result :<span id="result"></span></tr>
+</table>
+</body>
+</html>
