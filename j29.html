@@ -1,0 +1,30 @@
+<html>
+<script>
+function fun1()
+{
+document.getElementById("x").innerHTML =Math.ceil(Math.random()*10);
+}
+function fun2()
+{
+document.getElementById("x").innerHTML =Math.min(22,11,2,3,66);
+}
+function fun3()
+{
+document.getElementById("x").innerHTML =Math.max(22,11,2,3,66);
+}
+function fun4()
+{
+document.getElementById("x").innerHTML =Math.round(4.5);
+}
+
+</script>
+
+<body>
+Result is :<p id=x></p>
+<button onclick="fun1()">Random</button>
+<button onclick="fun2()">Min</button>
+<button onclick="fun3()">Max</button>
+<button onclick="fun4()">Round</button>
+
+<body>
+</html>

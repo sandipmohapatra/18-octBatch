@@ -1,0 +1,23 @@
+<!-- The arrow function allows to make the function syntax short for writing function expressions.
+You do not need the funtion keyword and  return keyword and curly brackets.-->
+
+<html>
+The sum of 2 nos are :<p id=x></p>
+The sub of 2 nos are :<p id=y></p>
+The mul of 2 nos are :<p id=z></p>
+The div of 2 nos are :<p id=v></p>
+
+<script>
+const sum=(a,b) => a+b;
+document.getElementById("x").innerHTML = sum(13,12);
+
+const sub=(a,b) => a-b;
+document.getElementById("y").innerHTML = sub(13,12);
+
+const mul=(a,b) => a*b;
+document.getElementById("z").innerHTML = mul(13,12);
+
+const div=(a,b) => a/b;
+document.getElementById("v").innerHTML = div(12,4);
+</script>
+</html>
