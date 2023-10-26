@@ -1,0 +1,17 @@
+id:
+
+The id attribute is used to uniquely identify an HTML element within the document.
+
+Each id attribute within an HTML document should have a unique value.
+ If two or more elements have the same id, it's considered invalid HTML and can lead to unexpected behavior.
+---------------------------------------------------------------------------------------------------------------------------
+name:
+
+The name attribute is commonly used with form elements like input fields, radio buttons, and checkboxes.
+When a form is submitted, the data from elements with the same name attribute is typically collected as an array or group, which can be accessed using the name attribute's value.
+
+
+<form>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+</form>
