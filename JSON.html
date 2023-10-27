@@ -1,0 +1,12 @@
+<html>
+<p id=x></p>
+
+<script>
+let data=
+'{"Employee":[{"firstName":"Darshan","age":"22" },{"firstName":"Pavan","age":"20" },{"firstName":"Priyanka","age":"21" }]}';
+
+const ob1=JSON.parse(data);
+
+document.getElementById("x").innerHTML = ob1.Employee[0].firstName+" "+ob1.Employee[1].firstName+"  "+ob1.Employee[2].firstName;
+</script>
+</html>
