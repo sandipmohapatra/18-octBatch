@@ -1,0 +1,20 @@
+Assignment-5
+------------------------------
+create an amazon website System
+1)registration ,
+3)check products available availability
+a)kids
+b)mens
+c)women
+4)buy goods
+5)return goods
+6)feedback
+-----------------------------------
+use BootStrap,javascript for validation ,css,and insert images
+use localstorage.jquery.
+
+mail me after completion
+------------------------------------------------------------------------------
+*don't copy from internet
+------------------------------------------------
+use from bootstrap examples.
