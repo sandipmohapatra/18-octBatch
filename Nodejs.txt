@@ -98,6 +98,15 @@ update student set phy=68,chem=63,bio=64 where rollno=103;
 update student set phy=78,chem=73,bio=84 where rollno=102;
 update student set tot=phy+chem+bio ;
 update student set avg=tot/3;
+
+to delete a row
+delete from student where rollno=101;
+
+to drop a table
+drop table student;
+
+to drop a database
+drop database mphasis;
 -------------------------------------------------------
 to drop database
 4)drop database cognizantstud;
@@ -213,6 +222,8 @@ PRIMARY KEY(studid,NAME)
 );
 ------------------------------End Of MySql-----------------------------------
 *npm install mysql
+
+mysql>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
 -----------------------------------
 example-1
 --------------------------
