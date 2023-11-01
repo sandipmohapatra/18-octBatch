@@ -85,6 +85,14 @@ insert into student values(102,'Rohan','Bangalore');
  to view the data 
 select * from student;
 ----------------------------------------------------------------------------
+create table employee (empno int,name varchar(30),address varchar(30));
+to add some more columns
+alter table student add phy int;
+alter table student add bio int;
+alter table student add chem int;
+alter table student add tot int;
+alter table student add avg int;
+
 -------------------------------------------------------
 to drop database
 4)drop database cognizantstud;
