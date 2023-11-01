@@ -70,10 +70,21 @@ To see the databases
 1)show databases;
 -----------------------------------------------------
 to create database
-2)create database cognizantstud;
+2)create database mphasis;
 --------------------------------------------------------
 to goto the database
-3)use cognizantstud;
+3)use mphasis;
+-------------------------------------------------------------------------------------------
+to create table
+create table student (rollno int,name varchar(30),address varchar(30));
+--------------------------------------------------------------
+to insert data into the table
+insert into student values(101,'sandip','Bangalore');
+insert into student values(102,'Rohan','Bangalore');
+-------------------------------------------------------------------------
+ to view the data 
+select * from student;
+----------------------------------------------------------------------------
 -------------------------------------------------------
 to drop database
 4)drop database cognizantstud;
