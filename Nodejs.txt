@@ -107,6 +107,9 @@ drop table student;
 
 to drop a database
 drop database mphasis;
+
+to update a row
+update student set address='pune' where rollno=101;
 -------------------------------------------------------
 to drop database
 4)drop database cognizantstud;
@@ -272,15 +275,15 @@ var con=mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"1234",
-    database:"weekend"
+    database:"mphasis"
 });
 
 con.connect(function (err)
 {
 if(err) throw err;
 console.log("Database connected");
-var sql = "create table student(rollno int,name varchar(30),address varchar(30))";
-con.query(sql,function(err,result)
+var sql1 = "create table student(rollno int,name varchar(30),address varchar(30))";
+con.query(sql1,function(err,result)
 {
 if(err) throw err;
 console.log("Table created");
@@ -295,7 +298,7 @@ var con=mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"1234",
-    database:"weekend"
+    database:"mphasis"
 });
 
 con.connect(function (err)
