@@ -257,7 +257,7 @@ con.connect(function (err)
 {
 if(err) throw err;
 console.log("Database connected");
-con.query("create database weekend",function(err,result)
+con.query("create database mphasis",function(err,result)
 {
 if(err) throw err;
 console.log("Database created");
