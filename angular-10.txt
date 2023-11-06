@@ -1,0 +1,899 @@
+https://nodejs.org/en/download/---------------windows installer -64 bits
+install visual studio code.
+--------------------------------------
+
+1)we have to install node.js
+2)On that we can install angular.
+3)node -v
+4)npm install -g @angular/cli
+5)ng new angular10
+---------------------------------------
+6)install visualstudio code
+7)cd angular10
+8)cd src
+9)ng serve------always open when running angular
+10)open VS code
+11)select app folder 
+---------------------------------------------------------
+12)we have 3 files
+app.component.ts  --------------to combine html and css
+app.component.html
+app.component.css
+-------------------------------------------------
+app.component.html
+--------------------------------
+<h1>Welcome to Angular-10 at BePractical</h1>
+<table>
+<tr><td>Enter your name</td><td><input type=text name=t1 size=20></td></tr>
+<tr><td>Enter your email</td><td><input type=text name=t2 size=20></td></tr>
+<tr><td>Enter your address</td><td><input type=text name=t3 size=20></td></tr>
+<tr><td>Enter your phoneno</td><td><input type=text name=t3 size=20></td></tr>
+
+<tr><td></td><td><input type=Button value="submit"></td></tr>
+
+</table>
+------------------------------------------------------------------------------
+app.component.css
+---------------------------------------
+h1{
+color:red;
+}
+-----------------------------------------------------
+app.component.ts
+-----------------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'angular10';
+}
+----------------------------------------------------------------------------------
+app.component.html
+-----------------------------------------
+<h1>Welcome to Angular-10 at BePractical</h1>
+<form action="second">
+<table>
+<tr><td>Enter your name</td><td><input type=text name=t1 size=20 required></td></tr>
+<tr><td>Enter your email</td><td><input type=text name=t2 size=20 required></td></tr>
+<tr><td>Enter your address</td><td><input type=text name=t3 size=20 required></td></tr>
+<tr><td>Enter your phoneno</td><td><input type=text name=t3 size=20 required></td></tr>
+
+<tr><td></td><td><input type=Submit value="submit"></td></tr>
+
+</table>
+</form>
+-----------------------------------------------------------
+notes
+-------------
+app.component.ts
+----------------------------------------------
+1)component is a class
+export class AppComponent 
+{
+  title = 'angular10';
+}
+-----------------------------------------------------------
+app.module.ts
+-------------------------
+It contains list of components added to the project.
+1)import { AppComponent } from './app.component';
+2)declarations: [AppComponent],
+3)bootstrap: [AppComponent]  <- which is the main file to execute.
+----------------------------------------------------------------------------------
+
+Flow :-
+step-1)index.html ------------<app-root>This is Akshya and Pratiksha</app-root>
+step-2)app.module.ts --------------------------bootstrap: [AppComponent]  <- which is the main file to execute.
+step-3)app.component.ts-------------------------selector: 'app-root',
+----------------------------------------------------------------------------------------------------------------------------------------
+to create a module
+---------------------------
+ng g c login --skipTests
+----------------------------------------------------
+automatically 3 files are created
+login.component.ts  --------------to combine html and css
+login.component.html
+login.component.css
+----------------------------------------------------------------------
+step 1)index.html change the selector.
+step 2)bootstrap: [LoginComponent]
+-------------------------------------------------------------------------------- 
+login.component.ts
+-----------------------------------
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
+login.component.html
+---------------------------------------
+<h1>Login Page</h1><hr><hr>
+
+<form action="login">
+    <table>
+    <tr><td>Enter your name</td><td><input type=text name=t1 size=20 required></td></tr>
+    <tr><td>Enter your password</td><td><input type=password name=t2 size=20 required></td></tr>
+   
+    <tr><td></td><td><input type=Submit value="submit"></td></tr>
+    
+    </table>
+    </form>
+--------------------------------------------------------
+make changes in
+1)index.html ----the selector
+2)app.module.ts---------------------bootstrap: [LoginComponent]
+--------------------------------------------------------------------
+Angular10
+------------------------
+1)Agular is an open source,cross platform.
+2)It provides end to end solution for building ,debiggig ,testing and deploying.
+3)It provides testing framework like jasmine,karma,protractor.
+4)Language used for angular is typescript.It support oops concept.
+5)Framework supported are MVC (model,view ,controller)
+6)It is used for mobile and web application.
+7)It is used for SPA(single page application)
+8)It has high speed and performance is better as compared to older technology used webpages.
+9)Angular use AOT compiler.[Ahead-of-time]
+10)It converts typescript code into efficient javascript code before building phases.
+because Browser will understand only javascript.
+11)It provides faster rendering.
+website like crizbuzz.com uses angular for cricket updates.
+----------------------------------------------------------------------------------------------------------------------
+There are 2 ways of data binding
+----------------------------------------
+1)one way binding
+2)two way binding
+
+In one way binding we have 
+1)interpolation
+2)property binding
+3)event binding
+-----------------------------------
+In two way binding we have 
+1)[(ngModule)]
+---------------------------------------------------------------------------------------------
+1)one way binding 
+i)Interpolation :- we use double curly braces {{}} and is known as interpolation or template expression.
+
+example:-
+we are assigning some value in the app.component.ts and the value is displayed on the html page.
+{{name}}
+<p>The sum of  6 and 7 is {{6+7}}</p>
+<p>The multiplication of 6 and 7 is {{6*7}}</p>
+--------------------------------------------------------------------------------------
+2)property binding
+------------------------------
+In this we use square brackets to the DOM properties.
+example:-
+<img[src]="shoe.jpg">
+-------------------------------------------------------------------------------------------
+3)event Binding
+in this we use circular brackets.It is mostly used with buttons.
+we put event in parentheses.
+example:-
+<button(click)="onSave()">Save</button>
+-----------------------------------------------------------------------------------------
+Two way binding
+-----------------------------------
+In this user can update the entry.A change made to the user entry in html page will reflect on the browser.
+
+example:-
+Enter your name<input type=text name=t1>
+Enter your name<input type=text [(ngModel)]="name">
+--------------------------------------------------------------------------------------------------
+to create project:- ng g c example1 --skipTests
+-------------------------------------------------------------------
+example-1
+-------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example1',
+  templateUrl: './example1.component.html',
+})
+export class Example1Component  {
+
+  public product=
+  {
+    Name:'Samsung TV',
+    Price:45000,
+    Customer:'Akshya'
+  }
+}
+-----------------------------------------------------------------
+<dl>
+    <dt>Name</dt>
+    <dd>{{product.Name}}</dd>
+    <dt>Price</dt>
+    <dd>{{product.Price}}</dd>
+    <dt>Name</dt>
+    <dd>{{product.Customer}}</dd>
+</dl>
+------------------------------------------------------
+
+1)make change in the index.html,
+2)make change in the app.module.ts
+3)to run :- ng serve
+4)on browser --------------------localhost:4200
+-------------------------------------------------------------
+wap to enter your details name,address,qulification,nationality,hobby etc.
+----------------------------------------------------------------------------------
+Example-2
+---------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example2',
+  template: `
+  <p> Hello my name is {{name}}</p>
+  <p> Hello my email is {{email}}</p>
+  <p> Hello my Address is {{address.street}} {{address.loc}} {{address.state}} {{address.city}}</p>
+  <p><Button (click)="sayName()">Say my Details</Button></p>`
+  
+})
+export class Example2Component 
+{
+name:String;
+email:String;
+address:any;
+constructor()
+{
+this.name='sandip Kumar';
+this.email='sandip@gmail.com';
+this.address=
+{
+  street:'MC Road',
+  loc:'Sivaji nagar',
+  state:'Karnataka',
+  city:'Bangalore'
+}
+}
+sayName()
+{
+console.log("My name is ",this.name);
+console.log("My email is ",this.email);
+console.log("My address is ",this.address);
+} }
+-------------------------------------------------------------
+Example-3
+---------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example2',
+  template: `
+  <p> Hello my name is {{name}}</p>
+  <p> Hello my email is {{email}}</p>
+  <p> Hello my Address is {{address.street}} {{address.loc}} {{address.state}} {{address.city}}</p>
+  <p><Button (click)="sayName()">Say my Details</Button></p>
+<h3>My Hobbies are</h3>{{hobbies}}  
+<h3>My Daily Foods are </h3>
+<ul>
+<li *ngFor="let food of foods">
+{{food}}
+</li>
+</ul> 
+`
+})
+export class Example2Component 
+{
+name:String;
+email:String;
+address:any;
+hobbies:String[];
+foods:String[];
+
+
+constructor()    <-It is used to assign the values to the variables.
+{
+this.name='sandip Kumar';
+this.email='sandip@gmail.com';
+this.address=
+{
+  street:'MC Road',
+  loc:'Sivaji nagar',
+  state:'Karnataka',
+  city:'Bangalore'
+}
+this.hobbies=['music','cricket','football','movies','sports'];
+this.foods=['rice and dal','Biryani','noodles','ice-cream'];
+}
+
+
+
+sayName()
+{
+console.log("My name is ",this.name);
+console.log("My email is ",this.email);
+console.log("My address is ",this.address);
+} }
+--------------------------------------------------------------
+Example-4
+-----------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example3',
+  templateUrl: './example3.component.html',
+  })
+export class Example3Component {
+
+  MyName : string =`sandip`;
+    appList: string[]=["Madhurima","suvajeet","koyel","subhajit"];
+
+}
+-----------------------------------------------------------------------
+<html><div>
+    My name is {{MyName}}<br />
+    My friends are {{appList[0]}}<br />
+    My friends are {{appList[1]}}<br />
+    My friends are {{appList[2]}}<br />
+    My friends are {{appList[3]}}<br />
+    </div></html>
+----------------------------------------------------------------------------------
+Example-5
+----------------------
+import {Component} from '@angular/core';
+@Component ({
+    selector :'my-app',
+    template:` MENU <ul>
+    <li> <a [routerLink]="['/Product']">Product</a></li>
+    <li> <a [routerLink]="['/Inventory']">Inventory</a></li>
+    </ul><hr><hr>
+    <router-outlet></router-outlet> `
+})
+export class AppComponent
+{}
+----------------------------------------------------------------------------------------------------------
+product.component.ts
+-------------------------------------------------------------------------------------------------------------
+import { Component } from '@angular/core';
+@Component ({
+selector: 'my-app',
+template: `<form>
+<table>
+<tr><td><label>Product ID:</label><td>
+<input type="text" name="pid" size=20 /><br /></tr>
+
+<tr><td><label>Product Name:</label><td>
+<input type="text" name="pname" size=20 /><br /></tr>
+<tr><td><label>Product Unit:</label><td>
+
+<input type="text" name="punit" size=20 /><br /></tr>
+<tr><td><label>Product Price:</label><td>
+
+<input type="text" name="pprice" size=20 /><br /></tr>
+<tr><td><td><input type="submit" value="submit" /><br /></tr>
+</table>
+</form>
+`
+,
+})
+export class Appproduct {
+}
+------------------------------------------------------------
+Inventory.component.ts
+----------------------------------------
+import { Component } from '@angular/core';
+@Component ({
+selector: 'my-app',
+template: `<form>
+<table>
+<tr><td><label>Inventory ID:</label><td>
+<input type="text" name="pid" size=20 /><br /></tr>
+<tr><td><label>Inventory Name:</label><td>
+<input type="text" name="pname" size=20 /><br /></tr>
+<tr><td><label>Inventory Unit:</label><td>
+<input type="text" name="punit" size=20 /><br /></tr>
+<tr><td><label>Inventory Price:</label><td>
+<input type="text" name="pprice" size=20 /><br /></tr>
+<tr><td><td><input type="submit" value="submit" /><br /></tr>
+</table>
+</form>` 
+
+})
+export class AppInventory {
+}
+----------------------------------------------------------------------------------
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent }  from './app.component';
+import {FormsModule} from  '@angular/forms';
+
+import { Appproduct } from './product.component'
+import { AppInventory } from './Inventory.component'
+import { RouterModule, Routes } from '@angular/router'; 
+
+const appRoutes: Routes = [
+  { path: 'Product', component: Appproduct },
+  { path: 'Inventory', component: AppInventory },
+  ];
+
+
+@NgModule({
+  imports:      [ BrowserModule , RouterModule.forRoot(appRoutes)],
+  declarations: [ AppComponent ,Appproduct,AppInventory],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+-------------------------------------------------------------------------------------------------------------
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent }  from './app.component';
+import { Appproduct } from './product.component'
+import { AppInventory } from './Inventory.component'
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'Product', component: Appproduct },
+  { path: 'Inventory', component: AppInventory },
+  ];
+
+
+@NgModule({
+  imports:      [ BrowserModule , RouterModule.forRoot(appRoutes)],
+  declarations: [ AppComponent ,Multiplierpipe ,Appproduct,AppInventory],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+-----------------------------------------------------------------------------
+Routing :-
+-----------------------
+Navigating from one page to other page.
+in website we have Homepage,about us,contact us,product,inventry,login,registration.
+-----------------------------------------------------------------------------------------------------------------
+Angular we call it Single Page Application(SPA)
+-----------------------------------------------------------------------------------------------------
+Homepage-------mainpage only have the navigation details with hyper-links
+-----------------------------------------------------------------------------------------------------
+Example:-
+------------------------------------------------------------------
+import {Component} from '@angular/core';
+@Component ({
+    selector :'my-app',
+    template:` MENU
+<ul>
+    <li> <a [routerLink]="['/Product']">Product</a></li>
+    <li> <a [routerLink]="['/Inventory']">Inventory</a></li>
+    <li> <a [routerLink]="['/Login']">Login</a></li>
+</ul>
+<hr><hr>
+    <router-outlet></router-outlet> `
+})
+export class AppComponent
+{}
+--------------------------------------------------------------------------------------------
+1) <router-outlet> :- It creates space for your webpages to load/render----product page,Inventory page,login page.
+ 2) "['/Product']" :- we have to define the path in the module.ts
+-----------------------------------------------------------------------------------------------
+app.module.ts
+-----------------------
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'Product', component: ProductComponent },
+  { path: 'Inventory', component: InventoryComponent },
+  { path: 'Login', component: LoginComponent },
+  ];
+------------------------------------------------------------------------------------------------------
+step 2:-
+--------------
+imports:      [ BrowserModule , RouterModule.forRoot(appRoutes)],
+--------------------------
+step -3:-
+------------------
+BootStrap[Myproject]
+-----------------------------------------------------------------------------
+create a COVID-19 hospital
+1)regsitration
+2)doctor time table
+3)book a Bed
+4)Book an ambulance
+5)FeedBack
+---------------------------------------------------------
+Myproject.ts
+---------------------
+import {Component} from '@angular/core';
+@Component ({
+    selector :'my-project',
+    template:` MENU
+<ul>
+    <li> <a [routerLink]="['/Product']">Product</a></li>
+    <li> <a [routerLink]="['/Inventory']">Inventory</a></li>
+    <li> <a [routerLink]="['/Login']">Login</a></li>
+</ul>
+<hr><hr>
+    <router-outlet></router-outlet> `
+})
+export class Myproject
+{}
+-----------------------------------------------------------------------------------------
+app.module.ts
+------------------------------
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { Example1Component } from './example1/example1.component';
+import { Example2Component } from './example2/example2.component';
+import { Example3Component } from './example3/example3.component';
+import { ProductComponent } from './product/product.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import {Myproject} from './Myproject';    <-----------------------------------------------added-------------------->
+import { RouterModule, Routes } from '@angular/router';  <------------added--------------------->
+
+const appRoutes: Routes = [						<-------------------------added------------------->
+  { path: 'Product', component: ProductComponent },
+  { path: 'Inventory', component: InventoryComponent },
+  { path: 'Login', component: LoginComponent },
+  ];
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    Example1Component,
+    Example2Component,
+    Example3Component,
+    ProductComponent,
+    InventoryComponent,
+    Myproject                         <------------------------added------------------------->
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)   ---------------------added------------------------------
+  ],
+  providers: [],
+  bootstrap: [Myproject] --------------------------added----------------------------
+})
+export class AppModule { }
+------------------------------------------------------------------------------------------------
+Example-5
+-----------------------
+app.component.ts
+------------------------------
+
+import {Component} from '@angular/core';
+@Component ({
+    selector :'my-app',
+    templateUrl:`app/app.component.html`
+})
+export class AppComponent
+{
+}
+
+-----------------------------------------------------
+app.component.html
+--------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Student Registration Page</h2>
+  <form role="form" action=second>
+    <div class="form-group">
+        <label for="name">Name:</label>
+  <input type="text" class="form-control" id="name" placeholder="Enter name" name=t1 required>
+      </div>
+      <div class="form-group">
+        <label for="number">Phone no:</label>
+  <input type="Number" class="form-control" id="Phone" placeholder="Enter phone no" name=t2 required>
+      </div>
+   
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+<input type="email" class="form-control" id="email" placeholder="Enter email" name=t3 required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name=t4 required>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+<button type="submit" class="btn btn-default">Submit</button> 
+  </form></div></body></html>
+----------------------------------------------------------------------
+
+Example-6
+------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- Menubar -->
+    <header>
+         <div class="container-fluid">
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Angular 10 Project</a>
+                </div>
+                      <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a [routerLink]="['/Product']">Product</a></li>
+                          <li> <a [routerLink]="['/Inventory']">Inventory</a></li>
+   				 <li> <a [routerLink]="['/Login']">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       </header>
+        <!-- Content -->
+    <div class="container content">
+		<router-outlet></router-outlet>
+    </div>
+    </div>
+</body>
+</html>
+-------------------------------------------------------------------------
+Or
+----------------
+<header>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body id="myPage">
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a class="w3-bar-item w3-button w3-coral"><i class="fa fa-home w3-margin-right"></i>Be-Practical Project</a>
+  <a routerLink="home" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Registration <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a routerLink="/addemployee" class="w3-bar-item w3-button">EmployeeRegistration</a>
+      <a routerLink="/addcustomer"class="w3-bar-item w3-button">CustomerRegistration</a>
+    </div>
+    </div>
+  <a [routerLink]="['/Product']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Product</a>
+  <a [routerLink]="['/Login']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login</a>
+  <a [routerLink]="['/Inventory']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Inventory</a>  
+  
+</div>
+<router-outlet></router-outlet>
+</div>
+    </body>
+    </header>
+-----------------------------------------------------------------------------------------------------------------------------
+amazon project
+----------------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-amazon',
+  templateUrl: './amazon.component.html'
+ })
+export class AmazonComponent 
+{
+  public categories = ['Select a Category', 'Electronics', 'Footwear', 'Fashion'];
+  public electronics = ['Select Electronics', 'JBL Speaker', 'Earpods'];
+  public footwear = ['Select Footwear', 'Nike Casuals', 'Lee Cooper Boot'];
+  public fashion = ['Select Fashion', 'Shirt', 'Jeans'];
+  public data = [
+   {Name: 'JBL Speaker', Price: 4500.55, Photo: 'assets/jblspeakers.jpg'},
+   {Name: 'Earpods', Price: 3000.44, Photo: 'assets/earpods.jpg'},
+   {Name: 'Nike Casuals', Price: 6000.44, Photo: 'assets/shoe.jpg'},
+   {Name: 'Lee Cooper Boot', Price: 2000.44, Photo: 'assets/shoe1.jpg'},
+   {Name: 'Shirt', Price: 1000.44, Photo: 'assets/shirt.jpg'},
+   {Name: 'Jeans', Price: 4000.44, Photo: 'assets/jeans.jpg'},
+  ];
+  public products:any = [];
+  public selectedCategoryName = 'Select a Category';
+  public selectedProductName:any;
+  public searchResults:any = [];
+  public searchedProduct:any = {
+    Name:'',
+    Price:0,
+    Photo:''
+  };
+  public cartItems:any = [];
+  public cartItemsCount = 0;
+  public showCart = false;
+  public GetCartItemsCount(){
+    this.cartItemsCount = this.cartItems.length;
+  }
+  public OnCategoryChange(){
+    switch(this.selectedCategoryName)
+    {
+      case 'Electronics':
+        this.products = this.electronics;
+        break;
+      case 'Footwear':
+        this.products = this.footwear;
+        break;
+      case 'Fashion':
+        this.products = this.fashion;
+        break;
+      default:
+        this.products = ['Select a Category'];
+        break;
+    }
+  }
+  public onProductChanged(){
+      this.searchResults = this.data.filter(x=>x.Name==this.selectedProductName);
+      this.searchedProduct = {
+        Name: this.searchResults[0].Name,
+        Price: this.searchResults[0].Price,
+        Photo: this.searchResults[0].Photo
+      };
+  }
+  public AddToCartClick() {
+     this.cartItems.push(this.searchedProduct);
+     alert('Item Added to Cart');
+     this.GetCartItemsCount();
+  }
+  public ToggleCartDisplay() {
+    this.showCart = (this.showCart==false)?true:false;
+  }
+  public DeleteCartItem(index:any){
+     let confirmDelete = confirm('Are you sure, want to Delete?');
+     if(confirmDelete==true) {
+       this.cartItems.splice(index, 1);
+       this.GetCartItemsCount();
+     }
+  }
+ }
+---------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <h2 class="text-center text-primary"><span class="fa fa-shopping-cart"></span>Amazon - Shopping</h2>
+    <div class="row">
+      <div class="col-3">
+          <div class="form-group">
+              <label>Select a Category</label>
+              <div>
+                  <select (change)="OnCategoryChange()" [(ngModel)]="selectedCategoryName" class="form-control">
+                      <option *ngFor="let item of categories">
+                          {{item}}
+                      </option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Select a Product</label>
+              <div>
+                  <select (change)="onProductChanged()" [(ngModel)]="selectedProductName" class="form-control">
+                      <option *ngFor="let item of products">
+                          {{item}}
+                      </option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Preview</label>
+              <div class="card">
+                  <div class="card-header">
+                      <h3>{{searchedProduct.Name}}</h3>
+                  </div>
+                  <div class="card-body text-center">
+                      <img [src]="searchedProduct.Photo" width="200" height="200">
+                  </div>
+                  <div class="card-footer text-center">
+                      <h3>{{searchedProduct.Price | currency:'INR'}}</h3>
+                      <button (click)="AddToCartClick()" class="btn btn-danger btn-block"> <span class="fa fa-shopping-cart"></span>Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6">
+          <div>
+              <table *ngIf="showCart" style="margin-top: 100px;" class="table table-hover">
+                  <caption>Your Cart Items</caption>
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Preview</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let item of cartItems; let i=index">
+                          <td>{{item.Name}}</td>
+                          <td>{{item.Price}}</td>
+                          <td><img width="50" height="50" [src]="item.Photo"></td>
+                          <td>
+                              <button (click)="DeleteCartItem(i)" class="btn btn-outline-danger"> <span class="fa fa-trash"></span> </button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="col-3">
+          <div>
+              <button (click)="ToggleCartDisplay()" class="btn btn-danger btn-block"><span class="fa fa-shopping-cart"></span> [{{cartItemsCount}}] Your Cart Items</button>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</body>
+----------------------------------------------------------------------------------------------
+module.ts
+---------------------
+import { FormsModule } from '@angular/forms';
+import [FormsModule]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
