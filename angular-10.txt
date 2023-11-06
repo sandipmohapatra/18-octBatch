@@ -22,7 +22,7 @@ app.component.css
 -------------------------------------------------
 app.component.html
 --------------------------------
-<h1>Welcome to Angular-10 at BePractical</h1>
+<h1>Welcome to Angular-13 at Mphasis</h1>
 <table>
 <tr><td>Enter your name</td><td><input type=text name=t1 size=20></td></tr>
 <tr><td>Enter your email</td><td><input type=text name=t2 size=20></td></tr>
@@ -90,17 +90,20 @@ step-1)index.html ------------<app-root>This is Akshya and Pratiksha</app-root>
 step-2)app.module.ts --------------------------bootstrap: [AppComponent]  <- which is the main file to execute.
 step-3)app.component.ts-------------------------selector: 'app-root',
 ----------------------------------------------------------------------------------------------------------------------------------------
-to create a module
----------------------------
-ng g c login --skipTests
+To create a module
+-------------------------------------------------------
+step 1:-ng g c login 
+open the ( login.component.html) and make changes according to your reqirement.
 ----------------------------------------------------
 automatically 3 files are created
+---------------------------------------------------------
 login.component.ts  --------------to combine html and css
 login.component.html
 login.component.css
 ----------------------------------------------------------------------
-step 1)index.html change the selector.
-step 2)bootstrap: [LoginComponent]
+step 2)index.html change the selector.
+step 3)module.ts ------------>bootstrap: [LoginComponent]
+step 4)npm start
 -------------------------------------------------------------------------------- 
 login.component.ts
 -----------------------------------
