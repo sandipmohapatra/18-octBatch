@@ -1,15 +1,22 @@
+Installing node
+----------------------------
 https://nodejs.org/en/download/---------------windows installer -64 bits
+-----------------------------------------------
 install visual studio code.
 --------------------------------------
-
 1)we have to install node.js
 2)On that we can install angular.
 3)node -v
+Installing Angular
+-------------------------------------------------
 4)npm install -g @angular/cli
+Creating new Project
+-------------------------------------------
 5)ng new angular10
 ---------------------------------------
-6)install visualstudio code
-7)cd angular10
+6)cd angular10
+7)goto visual studio code
+----------------------------------------------------------
 8)cd src
 9)ng serve------always open when running angular
 10)open VS code
@@ -141,9 +148,9 @@ make changes in
 1)index.html ----the selector
 2)app.module.ts---------------------bootstrap: [LoginComponent]
 --------------------------------------------------------------------
-Angular10
+Angular13
 ------------------------
-1)Agular is an open source,cross platform.
+1)Angular is an open source,cross platform.
 2)It provides end to end solution for building ,debiggig ,testing and deploying.
 3)It provides testing framework like jasmine,karma,protractor.
 4)Language used for angular is typescript.It support oops concept.
@@ -226,7 +233,13 @@ export class Example1Component  {
     <dd>{{product.Price}}</dd>
     <dt>Name</dt>
     <dd>{{product.Customer}}</dd>
+    <dt>ADD OF 15 AND 16 IS</dt>
+    <dd>{{15+16}}</dd>
+    <dt>SUB OF 10 AND 6 IS</dt>
+    <dd>{{10-6}}</dd>
+ 
 </dl>
+
 ------------------------------------------------------
 
 1)make change in the index.html,
@@ -889,260 +902,171 @@ import [FormsModule]
 
 
 --------------------------------------------------------------------------------------------
-1)split:- Wipro,learning,center
-2)onBlur() :- event fired when the form element looses the focus.button,textField ,input,label,select,textarea 
-3)roundup()   is -21
-4)merge 2 cells horizontally :-colsspan=2
-5)placeHolder is used for giving hints what has to inserted. 
-6)<select> is used for drop down box.
-7)<bold> is <strong>
-8)<figure> is used for digrams,pictures
-9)charAt(length-1)  :- Y
-10)removeAttr()
-11)$(hide)
-12)$(document.ready) for preventing code from running before document loading is finished.
-13)_myElement we can give tag for xml.
-14)xml version tag:-  <?xml version="1.0" encoding="utf-8"?>
-15)concate() :- add 2 string and new string is created 
-16)rootNode identify 
-ans :- xsl:template match="/"
-17)how to define color for all <p> for JQuery 
-ans :-$("p").css({"background-color":"red"})
-18)isNAN() :- return true when it in not a number.
-19)which tab is used to load external script 
-ans :-<script src="myscript.js"/>
-20)text(val) :- to display text in jquery
-21)dis-advantage of DTD 
-ans:-1)Does not support namespaces.
-2)Doesnot support inheritance
-3)not extensible
-----------------------------------------------------------------------
-questions
--------------------
-A webpage displays a picture. What tag was used to display that picture?
-<b> tag makes the enclosed text bold. What is other tag to make text bold?
-Tags and test that are not directly displayed on the page are written in _____ section.
-Which tag inserts a line horizontally on your web page?
-Which tag allows you to add a header in a table?
-How can you make a bulleted list?
-How can you make a numbered list?
-Choose the correct HTML tag to make a text italic
-Choose the correct HTML tag to make a text bold?
-What is the correct HTML for adding a background color?
-Choose the correct HTML tag for the smallest size heading?
-What is the correct HTML tag for inserting a line break?
-What does vlink attribute mean?
-Which attribute is used to name an element uniquely?
-Which tag creates a check box for a form in HTML?
-To create a combo box (drop down box) which tag will you use?
-Which of the following is not a pair tag?
-The _____ character tells browsers to stop tagging the text
-In HTML document the tags
-Marquee is a tag in HTML to
-There are ____ different of heading tags in HTML
-The way the browser displays the object can be modified by _____
-Tags and test that are not directly displayed on the page are written in _____ section
-Which tag allows you to add a row in a table?
-Using _______ statement is how you test for a specific condition
-A webpage displays a picture. What tag was used to display that picture?
-In CSS class is prepresented by
-In CSS id is prepresented by
-What is the correct syntax of doctype in HTML5?
-Which of the following is used to read an HTML page and render it?
- Which of the following tag is used for inserting the largest heading in HTML?
-Which element is used to get highlighted text in HTML5?
-Which element is used for or styling HTML5 layout?
-Which HTML tag is used for making character appearance bold?
-Which of the following element is used for canvas graphics?
-Which element is used to create multi-line text input?
-Which element is used for creating links?
-The HTML attribute used to define the inline styles is -
-The CSS property used to control the element's font-size is -
-Metadata does not define _________
- Which attribute is used to link the bookmark?
-Which of the following is not a type of attribute for input tag?
-The __________ attribute effectively renders the iframe as an inline include, which allows the parent document’s CSS to affect the contents of the iframe.
-Which of the following is not a HTML5 added form element?
-Which of the following property is used to align the text in a table?
- Which of the following CSS3 property can be used to allow line breaks within words?
-Which of the following box-sizing property value is described by width and height include content, padding, and borders?
-Which of the following property is used to control page breaks when printing a document after the bound element box ends?
-Which of the following element is used for canvas graphics?
-Which element is used to create multi-line text input?
-Which element is used for creating links?
-The HTML attribute used to define the inline styles is -
-The CSS property used to control the element's font-size is -
-Which HTML element defines navigation links?
-What is the correct syntax of doctype in HTML5?
-Which element is used to get highlighted text in HTML5?
- Which of the following CSS property is used to make the text bold?
-Which of the following are the CSS Extension Prefixes for Webkit?
-Which of the following is not the property of the CSS box model?
-What is the correct syntax of doctype in HTML5?
-Which of the following tag is used for inserting the largest heading in HTML?
-Which of the following extension is used to save an HTML file?
-The CSS property used to specify the transparency of an element is ?
-The HTML attribute used to define the inline styles is ?
-The CSS property used to draw a line around the elements outside the border?
- Which of the following element is not removed by HTML5?
-Which tag is used if you want to highlight something that is important to the reader?
-_____________ property specifies the direction in which a marquee should move.
- An ___________ rule is used to define a page block for printed styles.
- Which of the following selects a normal, or small-caps face from a font family?
-"What should be set with text-align property so that every line has equal width like in magazines and newspapers?
-"
- Which character is used to represent when a tag is closed in HTML?
-Among the following, which is the HTML paragraph tag?
-Which of the following HTML tag is used to create an unordered list?
-Which of the following HTML tag is used to add a row in a table?
-To show deleted text, which HTML element is used?
-Which tag is used to create a dropdown in HTML Form?
-Which of the following tag is used for inserting the largest heading in HTML?
-Which of the following is not a HTML5 tag?
- Which HTML tag is used to insert an image?
-Which tag is used to create a blank line in HTML?
- Which works similar to <b> element?
-What is the correct HTML for adding a background color?
-Choose the correct HTML element to define important text
-Which character is used to indicate an end tag?
-Choose the correct HTML element to define emphasized text
-What is the correct HTML for making a drop-down list?
-The HTML <canvas> element is used to:
-Which of the following HTML element is used for canvas graphics?
-In which part of the HTML metadata is contained?
-How do we write comments in HTML?
-What is the path for an image located in same folder as the current page?
-Which attribute is used  for defining bookmarks in a page?
-Which element is used for creating links?
-What is the work of <address> element in HTML5?
-What is the use of <hr/> tag in HTML?
-Which attribute is not essential under <iframe>?
-Which of the following tag is used for inserting the largest heading in HTML?
-Which of the following is not a HTML5 tag?
-Which tag is used to create a blank line in HTML?
- Which works similar to <b> element?
---------------------------------------------------------------------------------------------
-Answers
-------------------
-img
-<strong>
-<head>
-<hr>
-<th> and </th>
- <ul>
-<ol>
-<i>
-<b>
-<body bgcolor=”yellow”>
-<h6>
-<br>
-visited link
-id
-<input type=”checkbox”>
-<select>
-<img>
- /
-can be written in both uppercase or lowercase
-Display text with scrolling effect
-6
-attributes
-<head>
-<tr> and </tr>
-If
-img
-.(dot)
-#(hash)
-<!doctype html>
-Web browser
-<h1>
-<mark>
-css
-<b>content</b>
-<canvas>
-textarea
-<a>
-style
-font-size
-color
- href
-day
- seamless
-<password>
- text-align
-word-break
-border-box
-page-break-after
-<canvas>
-textarea
-<a>
-style
-font-size
-<nav>
-<!doctype html>
-<mark>
-font-weight: bold
--webkit
-color
- <!doctype html>
-<h1>
-.html
-opacity
-style
-outline
-span
-<b>
-marquee-direction
- @page
-font-variant
-text-align: justify
-/
-<p>
-<ul>
- <tr>
-<del>
-<select>
-<h1>
-<slider>
-<img src=”htmllogo.jpg” />
- <br>
-<strong>
-<body style="background-color:yellow;">  
-<strong>  
-/ 
-<em>
-<select>  
-draw graphics
-<canvas>
- head tag
-<!……>
-<img src= “pic.jpg”>
-id
-<a>
-contains contact details for author
-To create horizontal rule between sections
- frameborder
-<h1>
-<slider>
- <br>
-<strong>
-------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Which of the following commands create an unique index on author field of the posts collection?
+Consider that you are using { upsert : true } option in your update command. Which of the following parameters will be used to determine if any new documents were inserted:
+The ________ operator limits the contents of an array field from the query results to contain only the first element matching the query condition.
+Amongst which of the following is / are the command used to create collection in MongoDB?
+To create an index, you need to use ___ method of MongoDB.
+Aggregation operations in MongoDB ___ values from multiple documents.
+Which of the following is correct about MongoDB?
+Which of the following command can be used to check the size of a collection named posts?
+A record in MongoDB is a ___.
+In MongoDB, how do you perform a join operation between collections?
+Which of the following is a popular GUI tool for managing MongoDB databases?
+What is the default port number for MongoDB connections?
+After starting the mongo shell, your session will use the ________ database by default.
+The data model available within MongoDB allows us to represent ___.
+Amongst which of the following is / are true about the authentication ___.
+Which command is used to drop a collection in MongoDB?
+Which of the following is not a valid storage engine in MongoDB?
+Which language does MongoDB use for querying and manipulation of data?
+which of the following is not a system collection in MongoDB?
+Which of the following is a NoSQL database?
+Which of the following is a command used to create a new database in MongoDB?
+What is the use of the $rename operator in MongoDB?
+The data model available within MongoDB allows us to represent ___.
+ Amongst which of the following is / are true about the authentication ___.
+Amongst which of the following is / are true about MongoDB?
+Mongo looks for a database server listening on port_______
+Which is not a supported index type in MongoDB?
+In MongoDB, what does a projection do?
+If we requires a MangoDB install on a windows Vista system,which installation route would we take?
+Which command can be used to see the size of the data currently stored in the collection "myCollection? 
+Which command can be used start a MongoDB process as part of a replica set?
+Which option best describes the purpose of the Aggregation Framework in MongoDB?
+Which of the following statements regarding MongoDB's replica sets are true?
+Which query operator is used for querying elements within an array in MongoDB?
+Which type of index in MongoDB ensures that the indexed fields do not store duplicate values?
+In MongoDB, what is the purpose of the $unwind operator in aggregation?  
+Which of the following command can be used to check the size of a collection named posts
+Which of the following operator can be used to limit the number of documents in an array field of a document after an update is performed?
+For capped collection, cursors which do not automatically close and remain open after the client exhausts the results are called:
+MongoDB indexes use a _______ data structure.
+MongoDB supports the creation of user-defined ascending/descending indexes on a ______ field of a document.
+The ______ index is unique and prevents clients from inserting two documents with the same value for the _id field.
+Which of the following is not a system collection in MongoDB?
+A record in MongoDB is a ___.
+MongoDB stores documents in ___
+MongoDB is a _________ database that provides high performance, high availability, and easy scalability.
+ MongoDB has been adopted as ________ software by a number of major websites and services.
+With ________ MongoDB supports a complete backup solution and full deployment monitoring.
+Which of the following is a valid way to perform aggregation operations in MongoDB?
+Which query language is used to interact with MongoDB?
+In MongoDB, what is the purpose of the "_id" field in a document?
+Which of the following command can be used to check the size of a collection named posts
+Which of the following operator can be used to limit the number of documents in an array field of a document after an update is performed?
+For capped collection, cursors which do not automatically close and remain open after the client exhausts the results are called:
+In MongoDB, what is the primary role of a replica set?
+Which of the following is true about the "upsert" operation in MongoDB?
+which of the following about capped collection is correct
+what does the total keys examined field returned by the explain method indicate
+which of the following about capped collection is correct?
+Which of the following statements best describes MongoDB?
+In MongoDB, a document is equivalent to:
+Which data model is used by MongoDB?
+The primary key in MongoDB is called:
+What query language is used in MongoDB?
+Which command is used to create a database in MongoDB?
+In MongoDB, which operator is used to perform equality matching?
+Which command is used to retrieve all documents from a collection in MongoDB?
+What does "ACID" stand for in the context of MongoDB?
+On Linux the ______ manager can create a snapshot.
+________ an on-premise solution, has similar functionality to the cloud version.
+What is the size of Chunk by default?
+Which of the following format is supported by MongoDB?
+Point out the wrong statement.
+ MongoDB is a _________ database that provides high performance, high availability, and easy scalability.
+The _________ field provides the amount of resident memory in use?
+MongoDB requires a filesystem that supports ______ on directories?
+Which of the following is especially important in Sharded Clusters?
+Which feature of MongoDB allows you to distribute data across multiple servers to ensure high availability and fault tolerance?
+Which MongoDB operator is used to perform a left outer join between two collections in an aggregation pipeline?
+Which of the following is a valid way to perform an aggregation in MongoDB?
+How to update the value of a specific array element in MongoDB?
+MongoDB process collection of documents using _________ operations.
+Amongst which of the following is / are true about the authentication ___.
+ ------------------------------------------------------------------------------------------
+ db.posts.createIndex({"author":1 }, {"unique": true});
+nUpserted
+$elemMatch
+db.createCollection()
+createIndex()
+Group
+MongoDB supports geospatial indexes
+db.posts.stats()
+Document
+Use the $lookup aggregation stage
+MongoDB Compass
+27017
+test
+ Both A. and B.
+It is a process of verifying the identity of a client
+db.dropCollection()
+InnoDB
+Javascript
+admin.system.preferences
+MongoDB
+None of the above
+To rename a field in a document
+both1&2
+It is a process of verifying the identity of a client
+All of the mentioned above
+27017
+Neospatial
+allows to select only the necessary data rather than selecting the whole set of data from the document.
+Windows Legacy Installation Package
+db.myCollection().dataSize() 
+replSet
+It is used for extracting, transforming, and aggregating data within a collection.
+ Replica sets provide high availability, c) Replica sets use primary-secondary architecture, and d) Automatic failover is a feature of replica sets.
+ $elemMatch
+Unique Index  
+ To transform an array field into separate documents for each element.
+db.posts.stats()
+$push along with $each, $sort and $slice
+Tailable Cursors
+Map
+Single
+_id
+admin.system.preferences
+Document
+Collections
+Document
+Backend
+MMS
+Using the $aggregate method
+.JSON
+It is used as the primary key for the document.
+db.posts.stats()
+$push along with $each, $sort and $slice
+Tailable Cursors
+To maintain multiple copies of the same data for high availability.
+It updates a document if it exists; otherwise, it inserts it.
+only a and c
+number of index entries scanned
+only a and c
+A NoSQL database management system
+ A record in a relational database
+Document-oriented model
+_id
+BSON
+None of the above
+ $eq
+db.collection.find()
+Atomicity, Consistency, Isolation, Durability
+LVM
+ Ops Manager
+64 MB
+BSON
+ Secondary indices are not available in MongoDB
+ document
+mem.resident
+fsync()
+NSS
+Sharding
+$lookup
+db.collection.aggregate()
+Using the $ operator
+Map-reduce
+ It is a process of verifying the identity of a client
+---------------------------------------------------------------------------------------------------------
