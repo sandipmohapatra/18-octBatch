@@ -1,3 +1,11 @@
+creating users in mongodb
+--------------------------------------
+db.createUser({
+  user: "jhon",
+  pwd: "pass",
+  roles: [{ role: "readWrite", db: "your_database_name" }]
+});
+-------------------------------------------------------------------------------------------
 Angular 13
 --------------------------
 1)Angular is an open source,cross platform,
@@ -287,7 +295,7 @@ export class TwowaybindingComponent  <---app.module.ts (bootstrap)
 </body>
  -----------------------------------------------------------------------------
 1. ifdemo.component.ts(Directives)
-
+-----------------------------------------------------------------------------
 import { Component, OnInit } from '@angular/core';
 
 @Component({
