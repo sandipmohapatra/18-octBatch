@@ -200,8 +200,10 @@ desktop/flipcard/src/app>ng g c twowaybinding --skipTests
 --------------------------------------------------------------------------
 assignment-1
 wap to enter your name,address,phoneno,email.
-
+---------------------------------------------------------------------------
 use [(ngModule)] to update the input.
+*import { FormsModule } from '@angular/forms';
+* imports: [FormsModule]
 -----------------------------------------------------------------------------
 1. twowaybinding.component.ts
 --------------------------------------------------
