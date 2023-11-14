@@ -1,11 +1,3 @@
-creating users in mongodb
---------------------------------------
-db.createUser({
-  user: "jhon",
-  pwd: "pass",
-  roles: [{ role: "readWrite", db: "your_database_name" }]
-});
--------------------------------------------------------------------------------------------
 Angular 13
 --------------------------
 1)Angular is an open source,cross platform,
@@ -13,7 +5,7 @@ Angular 13
 3)it provides testing framework like jasmine,karma,protractor.
 4)language used for angular is typescript.It support oops.(javascript-var)
 5)Framework supported are MVC,MVVM
-6)it is also used for cross flatform mobile and web appliaction.
+6)it is also used for cross platform mobile and web appliaction.
 7)it is used for SPA (single page application) .
 8)it has high speed and performance is better as compared to older technolgy 
 used webpages.
@@ -150,7 +142,7 @@ Price:45000.44,
 <dd><input type=text value={{product.Price}}></dd>
 <dd innerHTML={{product.Price}}></dd>
 </dl>
-------------------------------
+--------------------------------------------------------------------
 create folder
 ---------------------
 1)desktop/flipcard/src/app>ng g c oneway --skipTests
@@ -200,10 +192,8 @@ desktop/flipcard/src/app>ng g c twowaybinding --skipTests
 --------------------------------------------------------------------------
 assignment-1
 wap to enter your name,address,phoneno,email.
----------------------------------------------------------------------------
+
 use [(ngModule)] to update the input.
-*import { FormsModule } from '@angular/forms';
-* imports: [FormsModule]
 -----------------------------------------------------------------------------
 1. twowaybinding.component.ts
 --------------------------------------------------
@@ -216,13 +206,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwowaybindingComponent  <---app.module.ts (bootstrap)
 {  
- public name = 'Samsung TV';
+ public name = 'Samsung TV';  <----global variable (you can access through out the application)
  public city = 'Delhi';
  public inStock = true;
- public product = {
-   Name: '',
-   City: '',
-   InStock: false
+ public product = {   
+ Name: '',				<---local variables  
+ City: '',
+ InStock: false
  };
  public UpdateClick() {
    this.product = {
@@ -297,7 +287,7 @@ export class TwowaybindingComponent  <---app.module.ts (bootstrap)
 </body>
  -----------------------------------------------------------------------------
 1. ifdemo.component.ts(Directives)
------------------------------------------------------------------------------
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -311,10 +301,12 @@ export class IfdemoComponent {
      Price: 4500.55,
      Photo: 'assets/shoe.jpg'
    };
-   public showImage = false;
+  
+ public showImage = false;
    public btnText = 'Show';
 
-   public TogglePreview() {
+   public TogglePreview() 
+{
       this.showImage = (this.showImage==false)?true:false;
       this.btnText = (this.btnText=='Show')?'Hide':'Show';
    }
@@ -373,7 +365,8 @@ export class SwitchdemoComponent{
    };
    public selectedView = 'info';
    public views = ['info', 'preview', 'more'];
-   public ChangeView(obj) {
+   public ChangeView(obj:any)
+ {
       this.selectedView = obj.target.name;
    }
  
@@ -513,85 +506,82 @@ step 4)(jblspeaker.jpg) download and store in assets folder.
 
 example-9
 --------------------
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-amazon',
-  templateUrl: './amazon.component.html',
-  styleUrls: ['./amazon.component.css']
+  selector: 'app-shoppingcart',
+  templateUrl: './shoppingcart.component.html',
+  styleUrls: ['./shoppingcart.component.css']
 })
-export class AmazonComponent 
-{
-  public categories = ['Select a Category', 'Electronics', 'Footwear', 'Fashion'];
-  public electronics = ['Select Electronics', 'JBL Speaker', 'Earpods'];
-  public footwear = ['Select Footwear', 'Nike Casuals', 'Lee Cooper Boot'];
-  public fashion = ['Select Fashion', 'Shirt', 'Jeans'];
-  public data = [
-   {Name: 'JBL Speaker', Price: 4500.55, Photo: 'assets/jblspeaker.jpg'},
-   {Name: 'Earpods', Price: 3000.44, Photo: 'assets/earpods.jpg'},
-   {Name: 'Nike Casuals', Price: 6000.44, Photo: 'assets/shoe.jpg'},
-   {Name: 'Lee Cooper Boot', Price: 2000.44, Photo: 'assets/shoe1.jpg'},
-   {Name: 'Shirt', Price: 1000.44, Photo: 'assets/shirt.jpg'},
-   {Name: 'Jeans', Price: 4000.44, Photo: 'assets/jeans.jpg'},
-  ];
-  public products:any = [];
-  public selectedCategoryName = 'Select a Category';
-  public selectedProductName:any;
-  public searchResults:any = [];
-  public searchedProduct = {
-    Name: '',
-    Price: 0,
-    Photo: ''
-  };
-  public cartItems:any = [];
-  public cartItemsCount = 0;
-  public showCart = false;
-  public GetCartItemsCount(){
-    this.cartItemsCount = this.cartItems.length;
-  }
-  public OnCategoryChange(){
-    switch(this.selectedCategoryName)
-    {
-      case 'Electronics':
-        this.products = this.electronics;
-        break;
-      case 'Footwear':
-        this.products = this.footwear;
-        break;
-      case 'Fashion':
-        this.products = this.fashion;
-        break;
-      default:
-        this.products = ['Select a Category'];
-        break;
+export class ShoppingcartComponent {
+ public categories = ['Select a Category', 'Electronics', 'Footwear', 'Fashion'];
+ public electronics = ['Select Electronics', 'JBL Speaker', 'Earpods'];
+ public footwear = ['Select Footwear', 'Nike Casuals', 'Lee Cooper Boot'];
+ public fashion = ['Select Fashion', 'Shirt', 'Jeans'];
+ public data = [
+  {Name: 'JBL Speaker', Price: 4500.55, Photo: 'assets/jblspeaker.jpg'},
+  {Name: 'Earpods', Price: 3000.44, Photo: 'assets/earpods.jpg'},
+  {Name: 'Nike Casuals', Price: 6000.44, Photo: 'assets/shoe.jpg'},
+  {Name: 'Lee Cooper Boot', Price: 2000.44, Photo: 'assets/shoe1.jpg'},
+  {Name: 'Shirt', Price: 1000.44, Photo: 'assets/shirt.jpg'},
+  {Name: 'Jeans', Price: 4000.44, Photo: 'assets/jeans.jpg'},
+ ];
+ public products = [];
+ public selectedCategoryName = 'Select a Category';
+ public selectedProductName;
+ public searchResults = [];
+ public searchedProduct = {
+   Name: '',
+   Price: 0,
+   Photo: ''
+ };
+ public cartItems = [];
+ public cartItemsCount = 0;
+ public showCart = false;
+ public GetCartItemsCount(){
+   this.cartItemsCount = this.cartItems.length;
+ }
+ public OnCategoryChange(){
+   switch(this.selectedCategoryName)
+   {
+     case 'Electronics':
+       this.products = this.electronics;
+       break;
+     case 'Footwear':
+       this.products = this.footwear;
+       break;
+     case 'Fashion':
+       this.products = this.fashion;
+       break;
+     default:
+       this.products = ['Select a Category'];
+       break;
+   }
+ }
+ public onProductChanged(){
+     this.searchResults = this.data.filter(x=>x.Name==this.selectedProductName);
+     this.searchedProduct = {
+       Name: this.searchResults[0].Name,
+       Price: this.searchResults[0].Price,
+       Photo: this.searchResults[0].Photo
+     };
+ }
+ public AddToCartClick() {
+    this.cartItems.push(this.searchedProduct);
+    alert('Item Added to Cart');
+    this.GetCartItemsCount();
+ }
+ public ToggleCartDisplay() {
+   this.showCart = (this.showCart==false)?true:false;
+ }
+ public DeleteCartItem(index){
+    let confirmDelete = confirm('Are you sure, want to Delete?');
+    if(confirmDelete==true) {
+      this.cartItems.splice(index, 1);
+      this.GetCartItemsCount();
     }
-  }
-  public onProductChanged(){
-      this.searchResults = this.data.filter(x=>x.Name==this.selectedProductName);
-      this.searchedProduct = {
-        Name: this.searchResults[0].Name,
-        Price: this.searchResults[0].Price,
-        Photo: this.searchResults[0].Photo
-      };
-  }
-  public AddToCartClick() 
-  {
-     this.cartItems.push(this.searchedProduct);
-     alert('Item Added to Cart');
-     this.GetCartItemsCount();
-  }
-  public ToggleCartDisplay() {
-    this.showCart = (this.showCart==false)?true:false;
-  }
-  public DeleteCartItem(index:any){
-     let confirmDelete = confirm('Are you sure, want to Delete?');
-     if(confirmDelete==true) {
-       this.cartItems.splice(index, 1);
-       this.GetCartItemsCount();
-     }
-  }
+ }
 }
-
 ------------------------------------------------------------------------------------------------------
 Shoppingcart.component.html
 --------------------------------------------
