@@ -1,3 +1,10 @@
+angular mphasis
+-------------------------------
+https://medium.com/@balramchavan/angular-2-4-5-and-6-interview-questions-set-1-a632b9dec579
+---------------------------------------------------
+https://angular-quiz.surge.sh/
+--------------------------------------------
+
 creating users in mongodb
 --------------------------------------
 db.createUser({
