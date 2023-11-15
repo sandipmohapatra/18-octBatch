@@ -1399,7 +1399,7 @@ Angular Service :- creating user-defined business logic which can be reused in t
 --------------------------------------------
 difference between service and funtion
 ------------------------------------------------------
-function ment for a single application or with in the folder or project 
+function ment for a single application or used with in the folder or project. 
 example:- addToCart()
 Service ment for any component for any project or folder not for single application.
 --------------------------------------------------------
@@ -1432,6 +1432,8 @@ export class CalcService {
   }
 }
 ------------------------------------------------------------------------------------------
+example9.ts
+----------------------------
 import {Component} from '@angular/core';
 import { CalcService } from './service/calc.service';
 @Component ({
@@ -1447,6 +1449,13 @@ sum: number = 0;
     console.log("the sum is "+this.sum);
 }}
 ------------------------------------------------------------------------------
+example9.html
+------------------------------------------------------
+<p>This is service Example</p>
+<div>
+The sum is {{sum}}
+</div>
+------------------------------------------------------
 app.module.ts
 --------------------
 add this.
@@ -1454,7 +1463,88 @@ providers: [CalcService]
 ----------------------------------------------------
 we have to exceute the component.ts
 -----------------------------------------------------------------
+example-15
+-------------------------------------
+service.ts
+----------------------
+import { Injectable } from '@angular/core';
+@Injectable({
+  providedIn: 'root'
+})
+export class CalcService {
 
+  constructor() { }
+
+  public add(...params: number[]): number 
+{
+    let result = 0;
+    for (let val of params) 
+{
+        result += val;
+            }
+    return result;
+  }
+
+public sub(x1:number,y1:number):number
+{
+    return x1-y1;
+}
+
+public mul(x1:number,y1:number):number
+{
+    return x1*y1;
+}
+
+public div(x1:number,y1:number):number
+{
+    return x1/y1;
+}
+}
+-----------------------------------------------------------------------------------------------------
+example9.ts
+--------------------------
+import { Component } from '@angular/core';
+import { CalcService } from '../service1';
+
+@Component({
+  selector: 'app-example9',
+  templateUrl: './example9.component.html',
+  styleUrls: ['./example9.component.css']
+})
+export class Example9Component {
+  sum: number = 0;
+  sub: number;
+  mul:number;
+  div:number;
+  constructor(x:CalcService)
+{
+    this.sum = x.add(11,12,13,14);
+    console.log("the sum is "+this.sum);
+    this.sub = x.sub(11,12);
+    console.log("the substraction is "+this.sub);
+    this.mul = x.mul(11,12);
+    console.log("the multipliction is "+this.mul);
+    this.div = x.div(11,12);
+    console.log("the division is "+this.div);
+  }
+
+}
+------------------------------------------------------------------------------------
+example9.html
+------------------------------------
+<p>This is service Example</p>
+<div>
+The sum is {{sum}}<br>
+The sub is {{sub}}<br>
+The mul is {{mul}}<br>
+The div is {{div}}<br>
+</div>
+------------------------------------------------
+app.module.ts
+--------------------
+add this.
+providers: [CalcService]
+------------------------------------------------------------------------------
 example-2
 
 import {    Injectable } from '@angular/core';  
