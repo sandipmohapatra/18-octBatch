@@ -1,10 +1,3 @@
-angular mphasis
--------------------------------
-https://medium.com/@balramchavan/angular-2-4-5-and-6-interview-questions-set-1-a632b9dec579
----------------------------------------------------
-https://angular-quiz.surge.sh/
---------------------------------------------
-
 creating users in mongodb
 --------------------------------------
 db.createUser({
@@ -1610,7 +1603,213 @@ export class AppComponent {
 }
 
 -------------------------------------------------------------------------------------------------------
-
+Angular13
+------------------
+ Define Angular 13?
+Predict the key features of Angular 13?
+How do you declare a component in Angular 13?
+What is the purpose of a module in Angular 13?
+How do you bind data to a template in Angular 13?
+What is the primary language used to write Angular 13 applications?
+What is the purpose of the ngOnInit lifecycle hook in Angular 13?
+How is data binding implemented in Angular 13?
+What is the purpose of Angular Modules?
+Angular 13 is mainly use to design Single Page Application.
+Which are the different Data Types supported by Typescript?
+What are the two types of enums?
+True or False: TypeScript can always correctly infer a variables type.
+What are the three main 'simple types' in TypeScript?
+What are variables in Typescript?
+What are the variable scopes available in TypeScript?
+Which object oriented terms are supported by Typescript?
+What type of assignment is this variable, `const myname: string = 'John';`?
+Which is a successful example of this tuple `[number, string]`?
+True or False: a Tuple and an Array are the same thing when discussing types
+Which of the following is an advantage of AngularJS?
+ Being a JavaScript-only framework, applications written in AngularJS are not safe and secure.
+AngularJS expressions bind AngularJS data to HTML like which of the following directive?
+. Which of the following is the correct syntax for writing AngularJS expressions?
+ Which of the following statement is true in the case of $routeProvider?
+" 
+AOT stands for ________"
+Choose the incorrect hook application lifecycle
+ On which of the types of components can a custom derivative be created?
+Among the following which is not built-in a pipe in angular?
+" 
+Which decorator is used to make a class a service?"
+" 
+Which function is used to import RouterModule in a feature module?"
+Which module is responsible for handling HTTP requests in Angular?
+Which decorator is used to define a property as an input in Angular?
+Which CLI command is used to start the Angular development server?
+Which file is used to configure routing in an Angular application?
+How can you pass data from a parent component to a child component in Angular 13?
+Choose the correct definition of the view in MVC
+On which of the types of components can a custom derivative be created
+Choose whether true or false:  AngularJS bootstrap itself during the config phase.
+Choose whether true or false: -ng-bind binding Angular JS application data to HTML tags.
+Among the following which is not built-in a pipe in angular
+The total $RootScope an AngularJS application can have is?
+Which of the following components is the one which can be injected as a dependency in Angular JS?
+Among the following which can be used to write AngularJS directives?
+State whether true or false: $routeprovider is a module.
+State whether true or false: $https Services used to make an Ajax call to the server.
+Choose the valid AngularJS expression?
+Which decorator is used for configuring model class?
+Which decorator is used to make a class a service?
+AngularJS is perfect for?
+Among the following which is not built-in a pipe in angular?
+What is Angular?
+Which command is used to create a new Angular project in Angular 13?
+What is the file extension for an Angular component template file?
+Which decorator is used to define a component in Angular?
+What is the purpose of Angular CLI?
+Which command is used to create a new Angular project?
+Which version of Angular introduced the Ivy rendering engine?
+What is the purpose of the NgModule decorator in Angular?
+Which file contains the main component of an Angular application?
+Which operator is used to handle asynchronous operations in Angular?
+Which version of Angular introduced the Ivy rendering engine?
+Which command is used to generate a new Angular component?
+Which file is used to configure routing in an Angular application?
+What is the purpose of the "ngOnInit" method in an Angular component?
+Which decorator is used to define a property as an input in Angular?
+Which operator is used for data binding in Angular?
+Which module provides support for lazy loading in Angular?
+What is the purpose of the "ngFor" directive in Angular?
+Which module is responsible for handling HTTP requests in Angular?
+Which CLI command is used to start the Angular development server?
+Which version of Angular introduced the Ivy rendering engine?
+Which command is used to generate a new Angular component?
+Which file is used to configure routing in an Angular application?
+Which decorator is used to define a property as an input in Angular?
+Which module provides support for lazy loading in Angular?
+Which of the following is not a core AngularJS directive.
+Model available in $rootScope can be overridden by its all child scopes.
+Which components can be injected as a dependency in AngularJS?
+On which of the following types of components can we create a custom directive?
+What MVC stands for?
+Which module is required to use Angular's HttpClient for making HTTP requests?
+What is the purpose of Angular's NgModule?
+Which Angular feature is used to create reusable UI components?
+Which command is used to create a new Angular project?
+Which Angular feature allows lazy loading of modules?
+Which command is used to start the Angular development server?
+Which file is used to define the routing configuration in Angular?
+What is the purpose of the ngFor directive in Angular?
+Which operator is used to handle asynchronous operations in Angular?
+Which file contains the main component of an Angular application?
+Which Angular feature is used to handle asynchronous operations?
+Which operator is used in Angular to unsubscribe from an observable?
+Which Angular module is used for making HTTP requests?
+What is the purpose of Angular's "FormsModule"?
+In Angular, what does "ngOnInit" lifecycle hook represent?
+How can you pass data from a parent component to a child component in Angular 13?
+What is the purpose of the Angular router in version 13?
+Which of the following is a new feature in Angular 13?
+Which version of TypeScript is supported in Angular 13?
+------------------------------------------------------------------------------------------------------
+A JavaScript framework for building web applications
+All of the above
+Using the @Component decorator
+To organize and reuse components, services, and other code blocks in your application
+Using both A and C
+TypeScript
+To perform any action after the component has been initialized
+ By using the [ ] square brackets syntax
+Both A and B
+TRUE
+All of the above mentioned
+String and Number  
+FALSE
+Boolean, Number, String    
+All
+All of the above
+ All of these
+Explicit  
+const ourTuple = [101, 'Coding God']      
+FALSE
+ All of the mentioned
+ true
+ng-bind
+{{expression}}
+ It is a service.
+Ahead of Time Compilation
+ngViewStart
+All of the Above
+DataPipe
+Injectable
+forChild
+HttpClientModule
+@Input
+ng serve
+app-routing.module.ts
+Using input properties
+view is responsible for dispalying all or a portion of data to the user
+css
+TRUE
+TRUE
+datapipe
+1
+Applcation module
+all the above
+FALSE
+TRUE
+{{2+2}} 
+@NgModule
+Injectable
+SPAs
+DataPipe
+ A JavaScript framework
+ng new
+.html
+=Component
+ To generate code scaffolding and automate development tasks
+ng new
+Angular 12
+It defines a module and its dependencies.
+app.component.ts
+subscribe
+Angular 11
+ng generate
+app-routing.module.ts
+It is called after the component is created and initialized.
+@Input
+ ?
+RouterModule
+ It is used to iterate over a collection and render multiple elements.
+HttpClientModule
+ng serve
+Angular 12
+ng generate
+app-routing.module.ts
+ @Input
+HttpClientModule
+ng-state
+TRUE
+All of the above
+All of the above
+Model View Controller
+@angular/common
+To declare and organize components, directives, and pipes
+Components
+ ng new
+ Routing
+ng serve
+app-routing.module.ts
+It repeats a section of HTML for each item in an iterable.
+subscribe
+app.component.ts
+Observables
+ unsubscribe
+HttpClientModule
+It enables two-way data binding in Angular forms.
+ It is called once after the component is initialized.
+ Using input properties
+To navigate between different views or components
+Enhanced error handling with detailed error messages
+TypeScript 4.4
+--------------------------------------------------------------------------------------------------------
 
 
 
